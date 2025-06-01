@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import custom components */
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/alerts.css";
+/* Add more component imports as needed */

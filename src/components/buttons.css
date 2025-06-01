@@ -1,0 +1,64 @@
+@layer components {
+  /* ===== Base Button ===== */
+  .btn {
+    @apply inline-flex items-center justify-center font-medium rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply px-4 py-2 text-sm;
+  }
+
+  /* ===== Button Variants (Without Hover) ===== */
+  .btn-primary {
+    @apply bg-blue-600 text-white focus:ring-blue-500;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-800 focus:ring-gray-300;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 text-white focus:ring-red-500;
+  }
+
+  .btn-outline {
+    @apply border border-gray-300 text-gray-700 bg-white focus:ring-gray-300;
+  }
+
+  /* ===== Hover Variants (Optional, User-Controlled) ===== */
+  .btn-primary-hover {
+    @apply hover:bg-blue-700;
+  }
+
+  .btn-secondary-hover {
+    @apply hover:bg-gray-200;
+  }
+
+  .btn-danger-hover {
+    @apply hover:bg-red-700;
+  }
+
+  .btn-outline-hover {
+    @apply hover:bg-gray-50;
+  }
+
+  /* ===== Sizes ===== */
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .btn-md {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-base;
+  }
+
+  /* ===== Icon Button ===== */
+  .btn-icon {
+    @apply p-2 inline-flex items-center justify-center rounded-full;
+  }
+
+  /* ===== Block Button ===== */
+  .btn-block {
+    @apply w-full;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@alpha09/snapui",
+  "version": "1.0.0",
+  "description": "A beautiful component library built with Tailwind CSS",
+  "main": "dist/snapui.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "tailwindcss -i ./src/snapui.css -o ./dist/snapui.css --minify",
+    "build:js": "browserify src/snapui.js -o dist/snapui.js -s SnapUI",
+    "watch": "tailwindcss -i ./src/snapui.css -o ./dist/snapui.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.21",
+    "browserify": "^17.0.1",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^3.4.17"
+  }
+}
